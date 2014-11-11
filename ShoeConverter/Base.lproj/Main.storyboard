@@ -46,7 +46,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter US Shoe Size Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MF2-nl-S5p">
                                 <rect key="frame" x="19" y="247" width="333" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Women's Shoe Conversion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jju-ed-M5a">
                                 <rect key="frame" x="16" y="218" width="236" height="21"/>
@@ -60,6 +60,9 @@
                                 <state key="normal" title="Convert">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="convertWomensShoeSizeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dsw-9v-oCN"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Converted Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYP-rG-nMW">
                                 <rect key="frame" x="19" y="289" width="333" height="21"/>
@@ -79,6 +82,8 @@
                     <connections>
                         <outlet property="mensConvertedShoeSizeLabel" destination="1xf-1Q-ma1" id="rCl-Th-TYf"/>
                         <outlet property="mensShoeSizeTextField" destination="VWG-rx-3pV" id="7qe-zf-Qna"/>
+                        <outlet property="womensConvertedShoeSizeLabel" destination="yYP-rG-nMW" id="6fP-Rl-ylf"/>
+                        <outlet property="womensShoeSizeTextField" destination="MF2-nl-S5p" id="Odv-px-kW1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
